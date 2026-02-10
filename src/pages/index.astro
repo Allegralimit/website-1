@@ -27,6 +27,35 @@ const posts = (await getCollection('blog')).sort(
 				<p>Welcome to my corner of the internet. I write, build, and share things here.</p>
 			</section>
 
+			<section class="about">
+				<h2>About Me</h2>
+				<p>
+					A pioneer in AI and Digital Transformation, I bring a decade of leadership to B2B SaaS. My portfolio includes conceptualizing, architecting, and deploying large-scale Contact Center ecosystems (CCaaS) with Customer Experience (CX), Unified Communication (UC), automation, and AI solutions.
+				</p>
+				<p>
+					I've partnered with customers across banking, healthcare, retail, telecom, and insurance as a thought leader and idea promoter — executing best practices and compliance (PCI, PII, HIPAA, GDPR, and more).
+				</p>
+				<p>
+					A catalyst for digital excellence, I serve as the bridge where innovation meets growth. Discover how my unique expertise in AI and technology consulting can elevate your business to new heights.
+				</p>
+
+				<h3>Areas of Expertise</h3>
+				<ul class="expertise-list">
+					<li>AI and Digital Transformation</li>
+					<li>IT Consulting (Product-based or Service-based)</li>
+					<li>Vendor Evaluation and Selection</li>
+					<li>Program and Project Management</li>
+					<li>GTM, Sales Enablement, Implementation</li>
+					<li>Pipeline Expansion, Portfolio Management and Revenue Realization</li>
+					<li>Customer Success Plan and Business Development</li>
+					<li>Strategy Consulting and Advisory Services</li>
+					<li>Start-up, Risk and Change Management</li>
+					<li>Custom Solutions for Industry Verticals</li>
+					<li>Solution Architecture and Enterprise Architecture</li>
+					<li>Operational Excellence — Standards, Frameworks, Tools and Methodologies</li>
+				</ul>
+			</section>
+
 			<section>
 				<h2>Recent Posts</h2>
 				<ul class="post-list">
@@ -73,6 +102,31 @@ const posts = (await getCollection('blog')).sort(
 	.hero p {
 		color: rgb(var(--gray));
 		font-size: 1.15rem;
+	}
+	.about {
+		margin-bottom: 2rem;
+		padding-bottom: 2rem;
+		border-bottom: 1px solid rgb(var(--gray-light));
+	}
+	.about p {
+		color: rgb(var(--gray-dark, var(--gray)));
+		line-height: 1.7;
+		margin-bottom: 1rem;
+	}
+	.about h3 {
+		font-size: 1.1rem;
+		margin-top: 1.5rem;
+		margin-bottom: 0.75rem;
+	}
+	.expertise-list {
+		columns: 2;
+		gap: 1rem;
+		padding-left: 1.2rem;
+	}
+	.expertise-list li {
+		margin-bottom: 0.5rem;
+		color: rgb(var(--gray));
+		font-size: 0.95rem;
 	}
 	h2 {
 		font-size: 1.1rem;
