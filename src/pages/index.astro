@@ -20,6 +20,9 @@ const posts = (await getCollection('blog')).sort(
 		<Header />
 		<main>
 			<section class="hero">
+				<a href="https://www.linkedin.com/in/mayukhee-das/" target="_blank" rel="noopener noreferrer">
+					<img src="/profile.jpg" alt="Mayukhee" class="profile-pic" />
+				</a>
 				<h1>Hi, I'm Mayukhee 👋</h1>
 				<p>Welcome to my corner of the internet. I write, build, and share things here.</p>
 			</section>
@@ -45,10 +48,23 @@ const posts = (await getCollection('blog')).sort(
 </html>
 
 <style>
+	.profile-pic {
+		width: 150px;
+		height: 150px;
+		border-radius: 50%;
+		object-fit: cover;
+		margin-bottom: 1rem;
+		border: 3px solid rgb(var(--gray-light));
+		transition: border-color 0.2s;
+	}
+	.profile-pic:hover {
+		border-color: var(--accent);
+	}
 	.hero {
 		padding: 3rem 0 2rem;
 		border-bottom: 1px solid rgb(var(--gray-light));
 		margin-bottom: 2rem;
+		text-align: center;
 	}
 	.hero h1 {
 		font-size: 2.5rem;
