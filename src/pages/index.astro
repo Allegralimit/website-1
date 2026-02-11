@@ -34,13 +34,17 @@ const posts = (await getCollection('blog')).sort(
 			<section class="about">
 				<h2>About Me</h2>
 				<p>
-					A pioneer in AI and Digital Transformation, I bring a decade of leadership to B2B SaaS, specially CCaaS practice. From conceptualizing, architecting, and deploying large-scale Contact Center ecosystems with CRMs, automation, and AI to leading global teams, I ensure both technical excellence and operational readiness.
+					A pioneer in AI and Digital Transformation, I bring a decade of leadership to B2B SaaS, specially CCaaS practice. I combine P&L ownership and deep technical fluency in AI-first CCaaS ecosystems including UCaaS, CX and CRMs to translate complex cloud architectures into quantifiable business outcomes and high-margin consulting practices.
 				</p>
 				<p>
 					As a CCaaS Practice Leader, I bridge the gap between complex cloud architecture and boardroom objectives. Having steered a $45M+ global portfolio with over 80 clients across high-stakes industries like Banking, Healthcare, and Telecom, I act as a strategic catalyst—transforming legacy cost centers into AI-driven profit engines. My leadership is defined by a relentless focus on 'outcome-based' transformation, ensuring compliance and operational excellence. From engineering the economics of modern customer experience to optimizing multi-regional P&L performance, I empower organizations to scale their CCaaS/CX infrastructure with the security, speed, and financial rigor required in today's digital economy. I don't just implement technology; I build the future of customer experience.
 				</p>
 				<p>
 					Discover how my unique expertise in AI and technology consulting can elevate your business to new heights.
+				</p>
+
+				<p class="linkedin-link">
+					<a href="https://www.linkedin.com/in/mayukhee-das/" target="_blank" rel="noopener noreferrer">Connect with me on LinkedIn →</a>
 				</p>
 
 				<h3>Areas of Expertise</h3>
@@ -177,8 +181,20 @@ const posts = (await getCollection('blog')).sort(
 	}
 	.about h3 {
 		font-size: 1.1rem;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+		color: rgb(var(--gray));
 		margin-top: 1.5rem;
 		margin-bottom: 0.75rem;
+	}
+	.linkedin-link a {
+		color: #2337ff;
+		font-weight: 500;
+		text-decoration: none;
+		transition: opacity 0.2s;
+	}
+	.linkedin-link a:hover {
+		opacity: 0.7;
 	}
 	.expertise-list {
 		columns: 2;
