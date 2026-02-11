@@ -12,11 +12,18 @@ import { SITE_TITLE } from '../consts';
 	</head>
 	<body>
 		<Header />
-		<main>
-			<section class="page-header">
+
+		<!-- Hero with fade -->
+		<section class="portfolio-hero">
+			<div class="hero-mesh"></div>
+			<div class="hero-content">
 				<h1>Portfolio</h1>
 				<p>A selection of projects and work I'm proud of.</p>
-			</section>
+			</div>
+			<div class="hero-fade"></div>
+		</section>
+
+		<main>
 
 			<div class="portfolio-grid">
 				<div class="portfolio-item">
@@ -56,18 +63,67 @@ import { SITE_TITLE } from '../consts';
 </html>
 
 <style>
-	.page-header {
-		padding: 3rem 0 2rem;
-		border-bottom: 1px solid rgb(var(--gray-light));
-		margin-bottom: 2rem;
+	/* ── Hero ── */
+	.portfolio-hero {
+		position: relative;
+		background: linear-gradient(135deg, #0f1724 0%, #1a2744 40%, #243b6e 70%, #2337ff 100%);
+		padding: 5rem 1.5rem 6rem;
+		text-align: center;
+		overflow: hidden;
 	}
-	.page-header h1 {
-		font-size: 2rem;
+	.hero-mesh {
+		position: absolute;
+		inset: 0;
+		opacity: 0.07;
+		background-image:
+			linear-gradient(rgba(255,255,255,0.3) 1px, transparent 1px),
+			linear-gradient(90deg, rgba(255,255,255,0.3) 1px, transparent 1px);
+		background-size: 60px 60px;
 	}
-	.page-header p {
-		color: rgb(var(--gray));
-		margin-top: 0.5rem;
+	.hero-content {
+		position: relative;
+		z-index: 1;
+		max-width: 660px;
+		margin: 0 auto;
 	}
+	.portfolio-hero h1 {
+		font-size: 2.8rem;
+		color: #fff;
+		margin-bottom: 0.5rem;
+	}
+	.portfolio-hero p {
+		color: rgba(255,255,255,0.7);
+		font-size: 1.15rem;
+		margin: 0;
+	}
+	.hero-fade {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 100px;
+		background: linear-gradient(to bottom, transparent, #f6f8fc);
+		pointer-events: none;
+	}
+
+	/* ── Page background ── */
+	main {
+		background: linear-gradient(180deg, #f6f8fc 0%, #ffffff 40%);
+		max-width: 960px;
+		margin: 0 auto;
+		padding: 0 1.5rem 4rem;
+	}
+
+	/* ── Responsive hero ── */
+	@media (max-width: 720px) {
+		.portfolio-hero {
+			padding: 3.5rem 1rem 4rem;
+		}
+		.portfolio-hero h1 {
+			font-size: 2rem;
+		}
+	}
+
 	.portfolio-item {
 		padding: 1.5rem 0;
 		border-bottom: 1px solid rgb(var(--gray-light));
