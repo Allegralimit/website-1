@@ -3,6 +3,8 @@ title: "The Art of Value Creation in Professional Services: Turning Expertise in
 description: "Explore the principles of value creation in professional services with real-world examples that illustrate its transformative power."
 pubDate: "Feb 10 2026"
 heroImage: "/blog-value-creation.jpg"
+category: "Services"
+featured: true
 ---
 
 In professional services, value creation is the cornerstone of successful client relationships and sustainable business growth. It's about going beyond delivering tasks or projects to creating meaningful, measurable outcomes that drive a client's success. This blog explores the principles of value creation with real-world examples to illustrate its transformative power.
