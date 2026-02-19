@@ -168,6 +168,27 @@ const posts = (await getCollection('blog')).sort(
 			width: 130px;
 			height: 130px;
 		}
+		.expertise-list {
+			columns: 1;
+		}
+	}
+	@media (max-width: 480px) {
+		.hero-banner {
+			padding: 2.5rem 1rem 2rem;
+		}
+		.hero-banner h1 {
+			font-size: 1.6rem;
+		}
+		.hero-tagline {
+			font-size: 1rem;
+		}
+		.profile-pic {
+			width: 110px;
+			height: 110px;
+		}
+		.post-list h3 {
+			font-size: 1.1rem;
+		}
 	}
 	.about {
 		margin-bottom: 2rem;
