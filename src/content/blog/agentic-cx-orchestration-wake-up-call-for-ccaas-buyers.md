@@ -1,13 +1,13 @@
 ---
-title: "Why UJET's AXO Is a Wake-Up Call for Every CCaaS Buyer in 2025"
-description: "UJET's Agentic Experience Orchestration reframes the CCaaS evaluation entirely. A strategic perspective on what it means, who it's for, and what buyers should be asking."
+title: "Agentic Experience Orchestration: The Question Every CCaaS Buyer Should Be Asking in 2025"
+description: "A new wave of AI-native CCaaS platforms is reframing enterprise contact center evaluation entirely. A strategic perspective on what Agentic CX means, who it's for, and what buyers should be asking."
 pubDate: "May 06 2026"
 heroImage: ""
 category: "Strategy"
 featured: true
 ---
 
-## The Question CCaaS Buyers Are Getting Wrong
+## The Question Every CCaaS Buyer Is Getting Wrong
 
 For the better part of a decade, enterprise contact center evaluations have revolved around a familiar checklist: omnichannel routing, IVR flexibility, workforce management, CRM integration, and total cost of ownership. These are not unimportant questions. But they are increasingly the wrong ones.
 
