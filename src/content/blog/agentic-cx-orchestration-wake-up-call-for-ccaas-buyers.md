@@ -1,6 +1,6 @@
 ---
-title: "Agentic Experience Orchestration: The Question Every CCaaS Buyer Should Be Asking in 2025"
-description: "A new wave of AI-native CCaaS platforms is reframing enterprise contact center evaluation entirely. A strategic perspective on what Agentic CX means, who it's for, and what buyers should be asking."
+title: "Agentic Experience Orchestration: The Question Every CCaaS Buyer Should Be Asking in 2026"
+description: "A new wave of AI-native CCaaS platforms is reframing enterprise contact center evaluation entirely. A strategic perspective on what Agentic CX means, who it's for, and what buyers should be asking in 2026."
 pubDate: "May 06 2026"
 heroImage: ""
 category: "Strategy"
@@ -89,7 +89,7 @@ UJET's value proposition is strongest when modelled over a 3–5 year horizon th
 
 ---
 
-## What This Means for Your 2025 CCaaS Strategy
+## What This Means for Your 2026 CCaaS Strategy
 
 The strategic conclusion is this: the CCaaS market is bifurcating. On one side are platforms extending legacy architectures with AI features, delivering incremental gains within structural constraints that will become increasingly costly to work around. On the other are platforms — UJET among the most advanced — that were designed for the AI era and are now executing against a vision of fully autonomous, continuously learning customer experience operations.
 
