@@ -35,7 +35,7 @@ The agentic AI race is not a one-horse field. The platforms worth serious attent
 
 ### Salesforce Agentforce Contact Center
 
-Salesforce's entry into the agentic contact center space is perhaps the most strategically significant development of the past twelve months. **Agentforce Contact Center**, announced as part of the broader Agentforce platform, positions itself as *"the only solution that unifies voice, digital channels, CRM data, and AI agents natively in a single system."* The proposition is compelling for organisations already standardised on Salesforce: a single data foundation, a unified agent workspace, and AI agents that operate with complete customer context drawn directly from the CRM — [no integration overhead, no context switching](https://www.salesforce.com/service/contact-center/).
+Salesforce's entry into the agentic contact center space is perhaps the most strategically significant development of the past twelve months. **Agentforce Contact Center**, announced as part of the broader Agentforce platform, positions itself as *"the only solution that unifies voice, digital channels, CRM data, and AI agents natively in a single system."* The proposition is compelling for organisations already standardised on Salesforce: a single data foundation, a unified agent workspace, and AI agents that operate with complete customer context drawn directly from the CRM — no integration overhead, no context switching.
 
 The pricing model — $125 USD per user per month for the full Contact Center bundle — reflects a deliberate move to consolidate what many enterprises currently buy as three or four separate products. For CIOs evaluating platform consolidation alongside CX transformation, Agentforce Contact Center warrants serious scrutiny.
 
@@ -59,7 +59,7 @@ Five9's recent integrations with **Google Cloud CCAI** and **ServiceNow** reflec
 
 ### UJET and the AI-Native Challenger
 
-**UJET** represents the most architecturally coherent expression of the AI-native thesis. Built without the legacy constraints of on-premise heritage, UJET's platform — and in particular its **AXO (Agentic Experience Orchestration)** layer — was designed from the ground up to support end-to-end agentic workflows: autonomous virtual agents connected to back-office systems, real-time agent augmentation, and a continuous learning engine that adapts from every interaction. Its deep integration with **Google Cloud CCAI** adds enterprise credibility and infrastructure scale to a platform that has earned [four consecutive years of G2 leadership in user satisfaction](https://ujet.cx/blog/ujet-soars-in-g2-spring-contact-center-report-high-performance-user-love-and-4-years-of-industry-leadership).
+**UJET** represents the most architecturally coherent expression of the AI-native thesis. Built without the legacy constraints of on-premise heritage, UJET's platform — and in particular its **AXO (Agentic Experience Orchestration)** layer — was designed from the ground up to support end-to-end agentic workflows: autonomous virtual agents connected to back-office systems, real-time agent augmentation, and a continuous learning engine that adapts from every interaction. Its deep integration with **Google Cloud CCAI** adds enterprise credibility and infrastructure scale to a platform that has earned four consecutive years of G2 leadership in user satisfaction.
 
 UJET's relative weakness is ecosystem depth — the partner network and pre-built integration library does not yet match Genesys or NICE. For organisations with complex, multi-system integration requirements, that gap warrants honest assessment. For digital-native businesses, on-demand service models, and organisations in Financial Services or Healthcare where in-app, authenticated experiences matter, it is a genuine differentiator.
 
@@ -104,7 +104,7 @@ The CCaaS market is bifurcating. On one side are platforms extending legacy arch
 
 Genesys and NICE, for their part, are not standing still — but their transformation is happening at the pace of large, complex organisations with significant installed bases to protect.
 
-For organisations that view customer experience as a strategic asset rather than a cost centre — and the evidence that it *should* be viewed this way is [substantial and growing](https://ujet.cx/resources/reports) — the relevant question in 2026 is no longer *"which CCaaS platform has the best feature set today?"* It is: **"which platform positions us to compete on customer experience three years from now, and which architectural bet are we willing to make?"**
+For organisations that view customer experience as a strategic asset rather than a cost centre — and the evidence that it *should* be viewed this way is substantial and growing — the relevant question in 2026 is no longer *"which CCaaS platform has the best feature set today?"* It is: **"which platform positions us to compete on customer experience three years from now, and which architectural bet are we willing to make?"**
 
 The platforms that answer that question most convincingly — not on a feature matrix, but in a live environment with real customer data — deserve to win the business.
 
