@@ -25,6 +25,16 @@ import { SITE_TITLE } from '../consts';
 
 		<main>
 
+			<!-- AI Projects Feature Card -->
+			<div class="ai-projects-banner">
+				<div class="ai-banner-text">
+					<span class="ai-banner-eyebrow">Case Studies</span>
+					<h2>AI Projects</h2>
+					<p>Six real implementations — voice automation, escalation orchestration, analytics, and agentic IVR — each with measurable business outcomes.</p>
+				</div>
+				<a href="/ai-projects/" class="ai-banner-btn">View AI Projects &rarr;</a>
+			</div>
+
 			<div class="portfolio-grid">
 				<div class="portfolio-item">
 					<h3>Global Enterprise CCaaS Migration & Infrastructure Consolidation</h3>
@@ -141,6 +151,69 @@ import { SITE_TITLE } from '../consts';
 		}
 		.portfolio-item li {
 			font-size: 0.9rem;
+		}
+	}
+
+	/* ── AI Projects Banner ── */
+	.ai-projects-banner {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 1.5rem;
+		background: linear-gradient(135deg, #0f1724 0%, #1a2744 50%, #2337ff 100%);
+		border-radius: 14px;
+		padding: 2rem 2.25rem;
+		margin-top: 2.5rem;
+		margin-bottom: 2.5rem;
+		box-shadow: 0 4px 20px rgba(35, 55, 255, 0.18);
+	}
+	.ai-banner-eyebrow {
+		font-size: 0.75rem;
+		letter-spacing: 0.12em;
+		text-transform: uppercase;
+		color: rgba(255,255,255,0.5);
+		display: block;
+		margin-bottom: 0.35rem;
+	}
+	.ai-banner-text h2 {
+		font-size: 1.5rem;
+		color: #fff;
+		margin: 0 0 0.4rem;
+	}
+	.ai-banner-text p {
+		color: rgba(255,255,255,0.7);
+		margin: 0;
+		font-size: 0.95rem;
+		line-height: 1.6;
+		max-width: 520px;
+	}
+	.ai-banner-btn {
+		white-space: nowrap;
+		background: #fff;
+		color: #2337ff;
+		font-weight: 700;
+		font-size: 0.95rem;
+		padding: 0.7rem 1.5rem;
+		border-radius: 8px;
+		text-decoration: none;
+		flex-shrink: 0;
+		transition: background 0.2s ease, color 0.2s ease;
+	}
+	.ai-banner-btn:hover {
+		background: #eef0ff;
+	}
+	@media (max-width: 600px) {
+		.ai-projects-banner {
+			flex-direction: column;
+			align-items: flex-start;
+			padding: 1.5rem;
+		}
+		.ai-banner-text h2 {
+			font-size: 1.25rem;
+		}
+		.ai-banner-btn {
+			width: 100%;
+			text-align: center;
 		}
 	}
 

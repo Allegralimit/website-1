@@ -1,0 +1,286 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE } from '../consts';
+
+const projects = [
+	{
+		number: '01',
+		title: 'Inbound Voice Automation',
+		subtitle: '24/7 AI voice agent for revenue capture and continuity',
+		tags: 'Voice AI • CRM Integration • Python NLP • Cloud-Native Telephony',
+		impact: 'Reduced TCO by 20% and reclaimed $1.5M+ in operational capacity by eliminating missed after-hours, overflow, and outage-related calls.',
+		solution: 'Built a resilient AI voice agent that answered inbound calls, scheduled appointments in the CRM, and escalated emergency scenarios immediately.',
+		tech: 'Cloud-native telephony, CRM/ticketing webhooks, Python NLP intent classification, low-latency scheduling logic, CI/CD, and state synchronization for high availability.',
+	},
+	{
+		number: '02',
+		title: 'AI-to-Human Escalation Orchestration',
+		subtitle: 'Warm handoff orchestration between AI and live agents',
+		tags: 'Escalation Design • Microservices • Sentiment Routing • Agent Desktop',
+		impact: 'Improved booking and resolution performance to 85% by reducing friction during AI-to-human transfers and preserving customer context.',
+		solution: 'Engineered an escalation layer that detected stalled conversations, complex edge cases, or high-empathy moments and transferred customers without context loss.',
+		tech: 'Decoupled microservices, custom session-state management, sentiment-aware routing, and real-time metadata packaging for the agent desktop.',
+	},
+	{
+		number: '03',
+		title: 'Autonomous Revenue Re-Engagement',
+		subtitle: 'Event-driven outbound engine for dormant revenue recovery',
+		tags: 'Outbound Automation • CRM Pipelines • Customer Segmentation • Revenue Ops',
+		impact: 'Converted unbooked leads and idle technician capacity into revenue opportunities without adding scheduling headcount.',
+		solution: 'Built a follow-up engine that monitored dispatch-board availability and triggered SMS, email, or voice campaigns for unsold estimates and lapsed agreements.',
+		tech: 'CRM-to-dispatch data pipelines, scheduled Python microservices, conditional API webhooks, customer segmentation, and channel-preference logic.',
+	},
+	{
+		number: '04',
+		title: 'Real-Time Performance Analytics and Call Scoring',
+		subtitle: '100% call coverage for QA, compliance, and coaching',
+		tags: 'NLP • Streaming Transcription • QA Automation • Tableau',
+		impact: 'Expanded QA visibility from limited manual sampling to 100% interaction scoring, improving script adherence, coaching precision, and sales transparency.',
+		solution: 'Led an analytics pipeline that transcribed, ingested, and scored every agent call against rubrics for sales compliance, objection handling, and process adherence.',
+		tech: 'Streaming transcription APIs, NLP classification, SQL transformations, deterministic scoring rules, and Tableau dashboards for executive visibility.',
+	},
+	{
+		number: '05',
+		title: 'Tier-1 Automation Engine',
+		subtitle: 'Conversational AI for high-volume support deflection',
+		tags: 'Cognigy.AI • NLU • ITSM Integration • Workflow Automation',
+		impact: 'Achieved 60% Tier-1 ticket automation, 80% AI-assisted FCR, 92% intent recognition accuracy, and 50% lower human-in-the-loop dependency.',
+		solution: 'Architected a proactive automation ecosystem that resolved repetitive Tier-1 requests through conversational flows, auto-triage, and backend workflow execution.',
+		tech: 'Cognigy.AI, Cognigy Voice Gateway, native NLU models, REST microservices, ITSM/CRM integration, and secure workflow execution patterns.',
+	},
+	{
+		number: '06',
+		title: 'Context-Driven IVR and Agentic AI',
+		subtitle: 'Dynamic intent routing with Omilia, Genesys, and NICE',
+		tags: 'Omilia • Genesys • NICE • Agentic Routing • IVR Modernisation',
+		impact: 'Reduced call misrouting by 40%, lowered AHT drivers, and improved upsell conversion by giving agents full caller context before answer.',
+		solution: 'Replaced rigid IVR decision trees with AI-driven pathfinding that interpreted caller intent, routed dynamically, and supported warm handoffs.',
+		tech: 'Omilia agentic pathfinder integrated into Genesys/NICE, data-ingestion pipelines, context-transfer APIs, and unified desktop metadata delivery.',
+	},
+];
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={`AI Projects — ${SITE_TITLE}`} description="Six AI-powered implementations across voice automation, escalation orchestration, analytics, and agentic routing." />
+	</head>
+	<body>
+		<Header />
+
+		<!-- Hero -->
+		<section class="hero">
+			<div class="hero-mesh"></div>
+			<div class="hero-content">
+				<p class="eyebrow">Case Studies</p>
+				<h1>AI Projects</h1>
+				<p class="sub">Six real implementations — from inbound voice automation to agentic IVR — delivering measurable outcomes across revenue, efficiency, and customer experience.</p>
+			</div>
+			<div class="hero-fade"></div>
+		</section>
+
+		<main>
+			<div class="projects-grid">
+				{projects.map((p) => (
+					<article class="project-card">
+						<div class="card-header">
+							<span class="number">{p.number}</span>
+							<div>
+								<h2>{p.title}</h2>
+								<p class="subtitle">{p.subtitle}</p>
+								<span class="tags">{p.tags}</span>
+							</div>
+						</div>
+						<div class="card-body">
+							<div class="block impact">
+								<span class="label">Impact</span>
+								<p>{p.impact}</p>
+							</div>
+							<div class="block solution">
+								<span class="label">Solution</span>
+								<p>{p.solution}</p>
+							</div>
+							<div class="block tech">
+								<span class="label">Technical Depth</span>
+								<p>{p.tech}</p>
+							</div>
+						</div>
+					</article>
+				))}
+			</div>
+
+			<div class="back-link">
+				<a href="/portfolio/">&larr; Back to Portfolio</a>
+			</div>
+		</main>
+
+		<Footer />
+	</body>
+</html>
+
+<style>
+	/* ── Hero ── */
+	.hero {
+		position: relative;
+		background: linear-gradient(135deg, #0f1724 0%, #1a2744 40%, #243b6e 70%, #2337ff 100%);
+		padding: 5rem 1.5rem 6rem;
+		text-align: center;
+		overflow: hidden;
+	}
+	.hero-mesh {
+		position: absolute;
+		inset: 0;
+		opacity: 0.07;
+		background-image:
+			linear-gradient(rgba(255,255,255,0.3) 1px, transparent 1px),
+			linear-gradient(90deg, rgba(255,255,255,0.3) 1px, transparent 1px);
+		background-size: 60px 60px;
+	}
+	.hero-content {
+		position: relative;
+		z-index: 1;
+		max-width: 720px;
+		margin: 0 auto;
+	}
+	.eyebrow {
+		font-size: 0.85rem;
+		letter-spacing: 0.12em;
+		text-transform: uppercase;
+		color: rgba(255,255,255,0.5);
+		margin-bottom: 0.5rem;
+	}
+	.hero h1 {
+		font-size: 2.8rem;
+		color: #fff;
+		margin-bottom: 0.75rem;
+	}
+	.hero .sub {
+		color: rgba(255,255,255,0.7);
+		font-size: 1.1rem;
+		margin: 0;
+		line-height: 1.7;
+	}
+	.hero-fade {
+		position: absolute;
+		bottom: 0; left: 0; right: 0;
+		height: 100px;
+		background: linear-gradient(to bottom, transparent, #f6f8fc);
+		pointer-events: none;
+	}
+
+	/* ── Layout ── */
+	main {
+		background: linear-gradient(180deg, #f6f8fc 0%, #ffffff 40%);
+		max-width: 960px;
+		margin: 0 auto;
+		padding: 0 1.5rem 4rem;
+	}
+
+	.projects-grid {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+		padding-top: 2.5rem;
+	}
+
+	/* ── Card ── */
+	.project-card {
+		background: #fff;
+		border: 1px solid #e4e9f2;
+		border-radius: 12px;
+		overflow: hidden;
+		box-shadow: 0 2px 12px rgba(35, 55, 255, 0.05);
+		transition: box-shadow 0.2s ease;
+	}
+	.project-card:hover {
+		box-shadow: 0 6px 24px rgba(35, 55, 255, 0.1);
+	}
+
+	.card-header {
+		display: flex;
+		align-items: flex-start;
+		gap: 1.25rem;
+		padding: 1.75rem 1.75rem 1.25rem;
+		border-bottom: 1px solid #f0f3fa;
+	}
+	.number {
+		font-size: 2rem;
+		font-weight: 800;
+		color: #e4e9f2;
+		line-height: 1;
+		flex-shrink: 0;
+		margin-top: 0.1rem;
+	}
+	.card-header h2 {
+		font-size: 1.2rem;
+		color: #0f1724;
+		margin: 0 0 0.2rem;
+	}
+	.subtitle {
+		font-size: 0.95rem;
+		color: #5a6a8a;
+		margin: 0 0 0.5rem;
+		font-style: italic;
+	}
+	.tags {
+		font-size: 0.8rem;
+		color: #2337ff;
+		font-weight: 500;
+		letter-spacing: 0.02em;
+	}
+
+	.card-body {
+		padding: 1.25rem 1.75rem 1.75rem;
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+	.block {
+		display: grid;
+		grid-template-columns: 130px 1fr;
+		gap: 0.5rem 1rem;
+		align-items: baseline;
+	}
+	.label {
+		font-size: 0.75rem;
+		font-weight: 700;
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+		color: #9aa5bc;
+		padding-top: 0.15rem;
+	}
+	.block p {
+		font-size: 0.95rem;
+		color: #3d4f6e;
+		line-height: 1.65;
+		margin: 0;
+	}
+	.impact .label { color: #1a9e6e; }
+	.impact p { color: #1a3a2e; }
+
+	/* ── Back link ── */
+	.back-link {
+		margin-top: 3rem;
+		text-align: center;
+	}
+	.back-link a {
+		font-size: 0.95rem;
+		color: #2337ff;
+		text-decoration: none;
+		font-weight: 500;
+	}
+	.back-link a:hover {
+		text-decoration: underline;
+	}
+
+	/* ── Responsive ── */
+	@media (max-width: 600px) {
+		.hero h1 { font-size: 2rem; }
+		.card-header { flex-direction: column; gap: 0.5rem; }
+		.number { font-size: 1.4rem; }
+		.block { grid-template-columns: 1fr; }
+		.label { padding-bottom: 0.1rem; }
+	}
+</style>
